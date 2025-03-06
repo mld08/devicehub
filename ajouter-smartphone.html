@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr" class="h-full bg-gray-100">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <title>Détails smartphone</title>
+    <title>Ajouter smartphone</title>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <style>
         body {
@@ -13,6 +14,7 @@
         }
     </style>
 </head>
+
 <body class="h-full">
     <div class="min-h-full">
         <nav class="bg-gray-800">
@@ -26,9 +28,13 @@
                     <div class="hidden md:block">
                         <div class="ml-10 flex items-baseline space-x-4">
                             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                            <a href="lister-smartphone.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Smartphones</a>
-                            <a href="details-smartphone.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Détails</a>
-                            <a href="ajouter-smartphone.html" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Ajouter</a>
+                            <a href="lister-smartphone.html"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Smartphones</a>
+                            <a href="details-smartphone.html"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Détails</a>
+                            <a href="ajouter-smartphone.html"
+                                class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
+                                aria-current="page">Ajouter</a>
                         </div>
                     </div>
                 </div>
@@ -38,9 +44,13 @@
             <div class="md:hidden" id="mobile-menu">
                 <div class="space-y-1 px-2 pt-2 pb-3 sm:px-3">
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                    <a href="lister-smartphone.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" >Smartphones</a>
-                    <a href="details-smartphone.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Détails</a>
-                    <a href="ajouter-smartphone.html" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Ajouter</a>
+                    <a href="lister-smartphone.html"
+                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Smartphones</a>
+                    <a href="details-smartphone.html"
+                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Détails</a>
+                    <a href="ajouter-smartphone.html"
+                        class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+                        aria-current="page">Ajouter</a>
 
                 </div>
         </nav>
@@ -48,10 +58,11 @@
         <header class="bg-white shadow-sm">
             <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 flex">
                 <h1 class="text-2xl font-bold tracking-tight text-gray-900">Ajouter un smartphone</h1>
-                <a class="group ml-auto block max-w-xs space-y-3 rounded-lg bg-sky-600 p-4 shadow-lg ring-1 ring-gray-900/5 hover:bg-sky-800 hover:ring-sky-500 dark:bg-white/5 dark:ring-white/10"
+                <a class="group ml-auto block max-w-xs space-y-3 rounded-lg bg-sky-600 p-4 shadow-lg ring-1 ring-gray-900/5 hover:bg-sky-800 hover:ring-sky-500"
                     href="lister-smartphone.html">
                     <div class="flex items-center space-x-3">
-                        <div class="md:text-sm sm:text-xs font-semibold text-gray-900 group-hover:text-white dark:text-white">
+                        <div
+                            class="md:text-sm sm:text-xs font-semibold text-gray-900 group-hover:text-white dark:text-white">
                             Retour</div>
                     </div>
                 </a>
@@ -60,103 +71,129 @@
         <main>
             <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
                 <!-- Your content -->
-                <form class="bg-gray-800 rounded-lg shadow-lg p-6 sm:p-8">
-                    <div class="space-y-8">
-                      <!-- Informations du Smartphone -->
-                      <div class="border-b border-gray-700 pb-8">
-                        <h2 class="text-2xl font-semibold text-gray-100">Informations du Smartphone</h2>
-                        <p class="mt-2 text-sm text-gray-400">Renseignez les détails du smartphone à ajouter.</p>
-                  
-                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-                          <!-- Nom -->
-                          <div class="col-span-2">
-                            <label for="nom" class="block text-sm font-medium text-gray-100">Nom</label>
-                            <input type="text" id="nom" name="nom" class="mt-2 block w-full rounded-md bg-gray-700 px-4 py-2 text-gray-100 outline-none focus:ring-2 focus:ring-blue-500" placeholder="Nom du smartphone">
-                          </div>
-                  
-                          <!-- Marque -->
-                          <div class="col-span-2 sm:col-span-1">
-                            <label for="marque" class="block text-sm font-medium text-gray-100">Marque</label>
-                            <input type="text" id="marque" name="marque" class="mt-2 block w-full rounded-md bg-gray-700 px-4 py-2 text-gray-100 outline-none focus:ring-2 focus:ring-blue-500" placeholder="Marque du smartphone">
-                          </div>
-                  
-                          <!-- Description -->
-                          <div class="col-span-2">
-                            <label for="description" class="block text-sm font-medium text-gray-100">Description</label>
-                            <textarea id="description" name="description" rows="4" class="mt-2 block w-full rounded-md bg-gray-700 px-4 py-2 text-gray-100 outline-none focus:ring-2 focus:ring-blue-500" placeholder="Décrivez les caractéristiques du smartphone"></textarea>
-                            <p class="mt-2 text-sm text-gray-400">Décrivez les caractéristiques du smartphone.</p>
-                          </div>
-                  
-                          <!-- Prix -->
-                          <div class="col-span-2 sm:col-span-1">
-                            <label for="prix" class="block text-sm font-medium text-gray-100">Prix (FCFA)</label>
-                            <input type="number" id="prix" name="prix" class="mt-2 block w-full rounded-md bg-gray-700 px-4 py-2 text-gray-100 outline-none focus:ring-2 focus:ring-blue-500" placeholder="Prix en FCFA">
-                          </div>
-                  
-                          <!-- Photo -->
-                          <div class="col-span-2">
-                            <label for="photo" class="block text-sm font-medium text-gray-100">Photo</label>
-                            <div class="mt-2 flex items-center gap-x-3">
-                              <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 0 1 2.25-2.25h16.5A2.25 2.25 0 0 1 22.5 6v12a2.25 2.25 0 0 1-2.25 2.25H3.75A2.25 2.25 0 0 1 1.5 18V6ZM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0 0 21 18v-1.94l-2.69-2.689a1.5 1.5 0 0 0-2.12 0l-.88.879.97.97a.75.75 0 1 1-1.06 1.06l-5.16-5.159a1.5 1.5 0 0 0-2.12 0L3 16.061Zm10.125-7.81a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Z" clip-rule="evenodd" />
-                              </svg>
-                              <input type="file" id="photo" name="photo" class="rounded-md bg-gray-700 text-sm text-gray-100 file:border-0 file:bg-gray-600 file:px-4 file:py-2 file:text-white hover:file:bg-gray-500 focus:ring-2 focus:ring-blue-500" />
+                <!-- Formulaire -->
+                <form class="bg-gray-800 rounded-lg shadow-lg p-4 sm:p-6 md:p-8">
+                    <div class="space-y-6 sm:space-y-8">
+                        <!-- Informations du Smartphone -->
+                        <div class="border-b border-gray-700 pb-6 sm:pb-8">
+                            <h2 class="text-xl sm:text-2xl font-semibold text-gray-100">Informations du Smartphone</h2>
+                            <p class="mt-2 text-sm text-gray-400">Renseignez les détails du smartphone à ajouter.</p>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-6 sm:mt-8">
+                                <!-- Nom -->
+                                <div class="col-span-1 sm:col-span-2">
+                                    <label for="nom" class="block text-sm font-medium text-gray-100">Nom</label>
+                                    <input type="text" id="nom" name="nom"
+                                        class="mt-1 sm:mt-2 block w-full rounded-md bg-gray-700 px-3 py-2 sm:px-4 text-gray-100 outline-none focus:ring-2 focus:ring-blue-500"
+                                        placeholder="Nom du smartphone">
+                                </div>
+
+                                <!-- Marque -->
+                                <div>
+                                    <label for="marque" class="block text-sm font-medium text-gray-100">Marque</label>
+                                    <input type="text" id="marque" name="marque"
+                                        class="mt-1 sm:mt-2 block w-full rounded-md bg-gray-700 px-3 py-2 sm:px-4 text-gray-100 outline-none focus:ring-2 focus:ring-blue-500"
+                                        placeholder="Marque du smartphone">
+                                </div>
+
+                                <!-- Description -->
+                                <div class="col-span-1 sm:col-span-2 lg:col-span-3">
+                                    <label for="description"
+                                        class="block text-sm font-medium text-gray-100">Description</label>
+                                    <textarea id="description" name="description" rows="3"
+                                        class="mt-1 sm:mt-2 block w-full rounded-md bg-gray-700 px-3 py-2 sm:px-4 text-gray-100 outline-none focus:ring-2 focus:ring-blue-500"
+                                        placeholder="Décrivez les caractéristiques du smartphone"></textarea>
+                                    <p class="mt-1 text-xs sm:text-sm text-gray-400">Décrivez les caractéristiques du
+                                        smartphone.</p>
+                                </div>
+
+                                <!-- Prix -->
+                                <div>
+                                    <label for="prix" class="block text-sm font-medium text-gray-100">Prix
+                                        (FCFA)</label>
+                                    <input type="number" id="prix" name="prix"
+                                        class="mt-1 sm:mt-2 block w-full rounded-md bg-gray-700 px-3 py-2 sm:px-4 text-gray-100 outline-none focus:ring-2 focus:ring-blue-500"
+                                        placeholder="Prix en FCFA">
+                                </div>
+                                <!-- Couleur -->
+                                <div>
+                                    <label for="couleur" class="block text-sm font-medium text-gray-100">Couleur</label>
+                                    <select id="couleur" name="couleur"
+                                        class="mt-1 sm:mt-2 block w-full rounded-md bg-gray-700 px-3 py-2 sm:px-4 text-gray-100 outline-none focus:ring-2 focus:ring-blue-500">
+                                        <option value="rouge">Rouge</option>
+                                        <option value="bleu">Bleu</option>
+                                        <option value="vert">Vert</option>
+                                        <option value="jaune">Jaune</option>
+                                        <option value="noir">Noir</option>
+                                    </select>
+                                </div>
+
+                                <!-- Photo -->
+                                <div class="col-span-1 sm:col-span-2 lg:col-span-3">
+                                    <label for="photo" class="block text-sm font-medium text-gray-100">Photo</label>
+                                    <div
+                                        class="mt-1 sm:mt-2 flex flex-col sm:flex-row items-start sm:items-center gap-y-2 gap-x-3">
+                                        <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 24 24"
+                                            aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M1.5 6a2.25 2.25 0 0 1 2.25-2.25h16.5A2.25 2.25 0 0 1 22.5 6v12a2.25 2.25 0 0 1-2.25 2.25H3.75A2.25 2.25 0 0 1 1.5 18V6ZM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0 0 21 18v-1.94l-2.69-2.689a1.5 1.5 0 0 0-2.12 0l-.88.879.97.97a.75.75 0 1 1-1.06 1.06l-5.16-5.159a1.5 1.5 0 0 0-2.12 0L3 16.061Zm10.125-7.81a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <input type="file" id="photo" name="photo"
+                                            class="w-full rounded-md bg-gray-700 text-sm text-gray-100 file:border-0 file:bg-gray-600 file:px-3 file:py-2 sm:file:px-4 file:text-white hover:file:bg-gray-500 focus:ring-2 focus:ring-blue-500" />
+                                    </div>
+                                </div>
+
+                                <!-- RAM -->
+                                <div>
+                                    <label for="ram" class="block text-sm font-medium text-gray-100">RAM (Go)</label>
+                                    <input type="text" id="ram" name="ram"
+                                        class="mt-1 sm:mt-2 block w-full rounded-md bg-gray-700 px-3 py-2 sm:px-4 text-gray-100 outline-none focus:ring-2 focus:ring-blue-500"
+                                        placeholder="Mémoire RAM (Go)">
+                                </div>
+
+                                <!-- ROM -->
+                                <div>
+                                    <label for="rom" class="block text-sm font-medium text-gray-100">ROM (Go)</label>
+                                    <input type="text" id="rom" name="rom"
+                                        class="mt-1 sm:mt-2 block w-full rounded-md bg-gray-700 px-3 py-2 sm:px-4 text-gray-100 outline-none focus:ring-2 focus:ring-blue-500"
+                                        placeholder="Mémoire ROM (Go)">
+                                </div>
+
+                                <!-- Écran -->
+                                <div>
+                                    <label for="ecran" class="block text-sm font-medium text-gray-100">Écran
+                                        (pouces)</label>
+                                    <input type="text" id="ecran" name="ecran"
+                                        class="mt-1 sm:mt-2 block w-full rounded-md bg-gray-700 px-3 py-2 sm:px-4 text-gray-100 outline-none focus:ring-2 focus:ring-blue-500"
+                                        placeholder="Taille de l'écran (pouces)">
+                                </div>
+
+                                
                             </div>
-                          </div>
-                  
-                          <!-- RAM -->
-                          <div>
-                            <label for="ram" class="block text-sm font-medium text-gray-100">RAM (Go)</label>
-                            <input type="text" id="ram" name="ram" class="mt-2 block w-full rounded-md bg-gray-700 px-4 py-2 text-gray-100 outline-none focus:ring-2 focus:ring-blue-500" placeholder="Mémoire RAM (Go)">
-                          </div>
-                  
-                          <!-- ROM -->
-                          <div>
-                            <label for="rom" class="block text-sm font-medium text-gray-100">ROM (Go)</label>
-                            <input type="text" id="rom" name="rom" class="mt-2 block w-full rounded-md bg-gray-700 px-4 py-2 text-gray-100 outline-none focus:ring-2 focus:ring-blue-500" placeholder="Mémoire ROM (Go)">
-                          </div>
-                  
-                          <!-- Écran -->
-                          <div>
-                            <label for="ecran" class="block text-sm font-medium text-gray-100">Écran (pouces)</label>
-                            <input type="text" id="ecran" name="ecran" class="mt-2 block w-full rounded-md bg-gray-700 px-4 py-2 text-gray-100 outline-none focus:ring-2 focus:ring-blue-500" placeholder="Taille de l'écran (pouces)">
-                          </div>
-                  
-                          <!-- Couleur -->
-                          <div>
-                            <label for="couleur" class="block text-sm font-medium text-gray-100">Couleur</label>
-                            <select id="couleur" name="couleur" class="mt-2 block w-full rounded-md bg-gray-700 px-4 py-2 text-gray-100 outline-none focus:ring-2 focus:ring-blue-500">
-                              <option value="rouge">Rouge</option>
-                              <option value="bleu">Bleu</option>
-                              <option value="vert">Vert</option>
-                              <option value="jaune">Jaune</option>
-                              <option value="noir">Noir</option>
-                            </select>
-                          </div>
                         </div>
-                      </div>
-                  
-                      <!-- Bouton Ajouter -->
-                      <div class="flex justify-end">
-                        <button type="submit" class="mt-4 rounded-md bg-blue-500 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-                          Ajouter
-                        </button>
-                      </div>
+
+                        <!-- Bouton Ajouter -->
+                        <div class="flex justify-center sm:justify-end">
+                            <button type="submit"
+                                class="w-full sm:w-auto rounded-md bg-blue-500 px-4 py-2 sm:px-6 sm:py-3 text-sm font-semibold text-white shadow-sm hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                                Ajouter
+                            </button>
+                        </div>
                     </div>
-                  </form>
-                  
+                </form>
             </div>
         </main>
     </div>
 
     <footer class="bg-gray-800 text-white py-6">
         <div class="container mx-auto px-4">
-          <div class="border-t border-gray-700 pt-4 text-center text-sm text-gray-400">
-            <p>&copy; 2025 DeviceHub. Tous droits réservés.</p>
-          </div>
+            <div class="border-t border-gray-700 pt-4 text-center text-sm text-gray-400">
+                <p>&copy; 2025 DeviceHub. Tous droits réservés.</p>
+            </div>
         </div>
-      </footer>
-      
+    </footer>
+
 
 </body>
 
