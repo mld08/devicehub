@@ -117,15 +117,34 @@
                                 </div>
                                 <!-- Couleur -->
                                 <div>
-                                    <label for="couleur" class="block text-sm font-medium text-gray-100">Couleur</label>
-                                    <select id="couleur" name="couleur"
-                                        class="mt-1 sm:mt-2 block w-full rounded-md bg-gray-700 px-3 py-2 sm:px-4 text-gray-100 outline-none focus:ring-2 focus:ring-blue-500">
-                                        <option value="rouge">Rouge</option>
-                                        <option value="bleu">Bleu</option>
-                                        <option value="vert">Vert</option>
-                                        <option value="jaune">Jaune</option>
-                                        <option value="noir">Noir</option>
-                                    </select>
+                                    <label class="block text-sm font-medium text-gray-100">Couleur</label>
+                                    <div class="mt-1 sm:mt-2 space-x-2 flex">
+                                        <label class="flex items-center space-x-2">
+                                            <input type="checkbox" name="couleurs[]" value="rouge"
+                                                class="h-5 w-5 rounded border-gray-600 bg-gray-700 text-blue-500 focus:ring-blue-500">
+                                            <span class="text-gray-100">Rouge</span>
+                                        </label>
+                                        <label class="flex items-center space-x-2">
+                                            <input type="checkbox" name="couleurs[]" value="bleu"
+                                                class="h-5 w-5 rounded border-gray-600 bg-gray-700 text-blue-500 focus:ring-blue-500">
+                                            <span class="text-gray-100">Bleu</span>
+                                        </label>
+                                        <label class="flex items-center space-x-2">
+                                            <input type="checkbox" name="couleurs[]" value="vert"
+                                                class="h-5 w-5 rounded border-gray-600 bg-gray-700 text-blue-500 focus:ring-blue-500">
+                                            <span class="text-gray-100">Vert</span>
+                                        </label>
+                                        <label class="flex items-center space-x-2">
+                                            <input type="checkbox" name="couleurs[]" value="jaune"
+                                                class="h-5 w-5 rounded border-gray-600 bg-gray-700 text-blue-500 focus:ring-blue-500">
+                                            <span class="text-gray-100">Jaune</span>
+                                        </label>
+                                        <label class="flex items-center space-x-2">
+                                            <input type="checkbox" name="couleurs[]" value="noir"
+                                                class="h-5 w-5 rounded border-gray-600 bg-gray-700 text-blue-500 focus:ring-blue-500">
+                                            <span class="text-gray-100">Noir</span>
+                                        </label>
+                                    </div>
                                 </div>
 
                                 <!-- Photo -->
@@ -169,7 +188,7 @@
                                         placeholder="Taille de l'écran (pouces)">
                                 </div>
 
-                                
+
                             </div>
                         </div>
 
